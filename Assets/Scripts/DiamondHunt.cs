@@ -83,9 +83,7 @@ public class DiamondHunt : MonoBehaviour
         {
             diamondCount++;
 
-            GameObject objectPrefab = diamond;
-
-            GameObject newObject = Instantiate(objectPrefab, button.transform);
+            GameObject newObject = Instantiate(diamond, button.transform);
 
             newObject.transform.SetAsLastSibling();
 
@@ -97,9 +95,7 @@ public class DiamondHunt : MonoBehaviour
         {
             diamondCount = 0;
 
-            GameObject objectPrefab = bomb;
-
-            GameObject newObject = Instantiate(objectPrefab, button.transform);
+            GameObject newObject = Instantiate(bomb, button.transform);
 
             newObject.transform.SetAsLastSibling();
 

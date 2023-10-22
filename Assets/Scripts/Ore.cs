@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Ore : MonoBehaviour
 {
@@ -9,6 +10,8 @@ public class Ore : MonoBehaviour
     public AudioClip getOre;
 
     public ParticleSystem particleSystem;
+
+    public Slider slider;
 
     public GameObject gameZone;
 
@@ -42,10 +45,14 @@ public class Ore : MonoBehaviour
         {
             integrity = 30;
         }
+
+        slider.maxValue = integrity;
     }
 
     private void Update()
     {
+        slider.value = integrity;
+
         if (integrity <= 0) 
         {
             if (gameObject.tag == "StoneOre")

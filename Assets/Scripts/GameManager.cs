@@ -15,12 +15,14 @@ public class GameManager : MonoBehaviour
     public int rubyOreCount;
     public int emeraldOreCount;
     public int diamondOreCount;
+    public int gearWheelCount;
 
     public Text stoneOreText;
     public Text ironOreText;
     public Text rubyOreText;
     public Text emeraldOreText;
     public Text diamondOreText;
+    public Text gearWheelText;
 
 
     private void Start()
@@ -30,6 +32,7 @@ public class GameManager : MonoBehaviour
         rubyOreCount = 0;
         emeraldOreCount = 0;
         diamondOreCount = 0;
+        gearWheelCount = 0;
 
         ores = new GameObject[5];
         ores[0] = StoneOre;
@@ -46,5 +49,6 @@ public class GameManager : MonoBehaviour
         rubyOreText.text = rubyOreCount.ToString();
         emeraldOreText.text = emeraldOreCount.ToString();
         diamondOreText.text = diamondOreCount.ToString();
+        gearWheelText.text = gearWheelCount.ToString();
     }
 }
