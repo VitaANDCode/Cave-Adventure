@@ -85,7 +85,7 @@ public class Ore : MonoBehaviour
 
     public void OnPhotoClick()
     {
-        integrity -= 1;
+        integrity -= gameManager.clickPower;
 
         audioManager.PlaySound(digOre);
 

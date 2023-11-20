@@ -24,7 +24,7 @@ public class GameManager : MonoBehaviour
     public Text diamondOreText;
     public Text gearWheelText;
 
-
+    public int clickPower;
     private void Start()
     {
         stoneOreCount = 0;
@@ -33,6 +33,8 @@ public class GameManager : MonoBehaviour
         emeraldOreCount = 0;
         diamondOreCount = 0;
         gearWheelCount = 0;
+
+        clickPower = 1;
 
         ores = new GameObject[5];
         ores[0] = StoneOre;
